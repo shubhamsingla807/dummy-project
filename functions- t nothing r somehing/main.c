@@ -1,24 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
-
-
-
-int add(void);
-void main(
+int add(int a1, int b1);
+int main()
 {
-   int s=0 ;
-
-   printf("%d" , s);
-   s = add();
-   printf("sum is %d",s);
-
+   int sum=0,a,b;
+   printf("Enter two numbers:\n");
+   scanf("%d%d",&a,&b);
+   sum = add(a,b);
+   printf("Sum is : %d" ,sum);
+return 0;
 }
-int add()
-{
-int a = 0,b = 0,c = 0;
-printf("enter two numbers\n");
-scanf("%d %d",&a,&b);
-c=a+b;
+int add(int a1, int b1)
+ {
+    return(a1+b1);
+ }
 
-return(c);
-}
+
